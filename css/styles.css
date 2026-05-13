@@ -189,27 +189,11 @@ h1,h2,h3,h4,h5 { font-family: 'Playfair Display', Georgia, serif; font-weight: 4
   overflow: hidden;
 }
 
-/* Animated gem-light background — always visible, video layers on top */
+/* Fallback image shows instantly while video loads */
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: var(--black);
-}
-.hero-bg::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at 18% 60%, rgba(201,169,110,0.14) 0%, transparent 55%),
-    radial-gradient(ellipse at 78% 28%, rgba(201,169,110,0.09) 0%, transparent 45%),
-    radial-gradient(ellipse at 50% 85%, rgba(201,169,110,0.07) 0%, transparent 40%),
-    radial-gradient(ellipse at 8%  10%, rgba(100,80,40,0.18)   0%, transparent 40%);
-  animation: heroGlow 10s ease-in-out infinite alternate;
-}
-@keyframes heroGlow {
-  0%   { opacity: 0.65; transform: scale(1); }
-  50%  { opacity: 1;    transform: scale(1.04); }
-  100% { opacity: 0.75; transform: scale(1.01); }
+  background: var(--black) url('../assets/hero/hero-fallback.jpg') center/cover no-repeat;
 }
 
 .hero-video {

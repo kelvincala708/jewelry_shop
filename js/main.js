@@ -48,6 +48,15 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
+// --- Hero video: fade in only when playback is ready (no flash of still image) ---
+const heroVideo = document.querySelector('.hero-video');
+if (heroVideo) {
+  const showVideo = () => heroVideo.classList.add('ready');
+  heroVideo.addEventListener('canplay', showVideo);
+  // Fallback: if video never fires canplay (e.g. unsupported), keep dark background
+  setTimeout(() => heroVideo.classList.add('ready'), 4000);
+}
+
 // --- Gold particle generator for hero ---
 function spawnParticles() {
   const container = document.getElementById('particles');

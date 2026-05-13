@@ -189,11 +189,11 @@ h1,h2,h3,h4,h5 { font-family: 'Playfair Display', Georgia, serif; font-weight: 4
   overflow: hidden;
 }
 
-/* Fallback image shows instantly while video loads */
+/* Dark background — video fades in smoothly when ready */
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: var(--black) url('../assets/hero/hero-fallback.jpg') center/cover no-repeat;
+  background: var(--black);
 }
 
 .hero-video {
@@ -201,6 +201,11 @@ h1,h2,h3,h4,h5 { font-family: 'Playfair Display', Georgia, serif; font-weight: 4
   inset: 0;
   width: 100%; height: 100%;
   object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+.hero-video.ready {
+  opacity: 1;
 }
 .hero-overlay {
   position: absolute;

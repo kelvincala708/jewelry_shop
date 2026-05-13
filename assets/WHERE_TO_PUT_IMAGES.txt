@@ -1,0 +1,52 @@
+LUMIÈRE — Asset Placement Guide
+================================
+
+Drop your generated images/video into the matching paths below.
+The website will automatically show them when files are present.
+
+HERO VIDEO (generated with Kling AI / Runway ML)
+-------------------------------------------------
+  assets/hero/hero.mp4              ← looping hero video (5-10 sec)
+  assets/hero/hero-fallback.jpg     ← 4K still image fallback (for mobile)
+
+COLLECTION THUMBNAILS (1 image per category)
+---------------------------------------------
+  assets/collections/rings.jpg
+  assets/collections/necklaces.jpg
+  assets/collections/earrings.jpg
+  assets/collections/bracelets.jpg
+  Recommended size: 800x900px
+
+PRODUCT IMAGES (2 per category = 8 total)
+------------------------------------------
+  assets/products/rings/ring-01.jpg
+  assets/products/rings/ring-02.jpg
+  assets/products/necklaces/necklace-01.jpg
+  assets/products/necklaces/necklace-02.jpg
+  assets/products/earrings/earrings-01.jpg
+  assets/products/earrings/earrings-02.jpg
+  assets/products/bracelets/bracelet-01.jpg
+  assets/products/bracelets/bracelet-02.jpg
+  Recommended size: 600x800px (portrait)
+
+ABOUT / ATELIER PHOTO
+----------------------
+  assets/about/atelier.jpg           ← brand/workshop/lifestyle photo
+  Recommended size: 900x1100px
+
+INSTAGRAM / GALLERY STRIP (6 square images)
+--------------------------------------------
+  assets/gallery/gallery-01.jpg
+  assets/gallery/gallery-02.jpg
+  assets/gallery/gallery-03.jpg
+  assets/gallery/gallery-04.jpg
+  assets/gallery/gallery-05.jpg
+  assets/gallery/gallery-06.jpg
+  Recommended size: 600x600px (square)
+
+TIPS
+----
+- Use JPG for photos (smaller file size, faster load)
+- Keep file names exactly as listed above (case-sensitive)
+- Compress images before uploading (use squoosh.app for free)
+- The website works right now without images — placeholders are shown

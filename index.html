@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMIÈRE — Fine Jewelry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ================================================
+       NAVIGATION
+       ================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">LUMIÈRE</a>
+      <ul class="nav-links">
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#new-arrivals">New Arrivals</a></li>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-icon" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="btn-icon" aria-label="Cart">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#new-arrivals">New Arrivals</a></li>
+      <li><a href="#about">Our Story</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ================================================
+       HERO
+       ================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <!-- Drop your generated video in assets/hero/hero.mp4 -->
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/hero/hero-fallback.jpg">
+        <source src="assets/hero/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">New Collection 2026</p>
+      <h1 class="hero-title">
+        <span class="line">Where Light</span>
+        <span class="line italic">Meets Luxury</span>
+      </h1>
+      <p class="hero-subtitle">Handcrafted fine jewelry for those who define their own elegance</p>
+      <div class="hero-cta">
+        <a href="#collections" class="btn btn-primary">Explore Collection</a>
+        <a href="#about" class="btn btn-ghost">Our Craft</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       TICKER
+       ================================================ -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>Free Shipping Over $500</span><span class="dot">✦</span>
+      <span>Certified Conflict-Free Diamonds</span><span class="dot">✦</span>
+      <span>Lifetime Warranty</span><span class="dot">✦</span>
+      <span>Free Returns Within 30 Days</span><span class="dot">✦</span>
+      <span>Custom Engraving Available</span><span class="dot">✦</span>
+      <span>Free Shipping Over $500</span><span class="dot">✦</span>
+      <span>Certified Conflict-Free Diamonds</span><span class="dot">✦</span>
+      <span>Lifetime Warranty</span><span class="dot">✦</span>
+      <span>Free Returns Within 30 Days</span><span class="dot">✦</span>
+      <span>Custom Engraving Available</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ================================================
+       COLLECTIONS
+       ================================================ -->
+  <section class="collections" id="collections">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Shop by Category</p>
+        <h2 class="section-title">Our Collections</h2>
+      </div>
+      <div class="collections-grid">
+        <!-- Drop images in assets/collections/ -->
+        <div class="collection-card" style="background-image:url('assets/collections/rings.jpg')">
+          <div class="card-placeholder">rings.jpg</div>
+          <div class="card-overlay">
+            <h3>Rings</h3>
+            <p>Engagement · Wedding · Statement</p>
+            <a href="#" class="card-link">Shop Now →</a>
+          </div>
+        </div>
+        <div class="collection-card" style="background-image:url('assets/collections/necklaces.jpg')">
+          <div class="card-placeholder">necklaces.jpg</div>
+          <div class="card-overlay">
+            <h3>Necklaces</h3>
+            <p>Pendants · Chains · Chokers</p>
+            <a href="#" class="card-link">Shop Now →</a>
+          </div>
+        </div>
+        <div class="collection-card" style="background-image:url('assets/collections/earrings.jpg')">
+          <div class="card-placeholder">earrings.jpg</div>
+          <div class="card-overlay">
+            <h3>Earrings</h3>
+            <p>Studs · Drops · Hoops</p>
+            <a href="#" class="card-link">Shop Now →</a>
+          </div>
+        </div>
+        <div class="collection-card" style="background-image:url('assets/collections/bracelets.jpg')">
+          <div class="card-placeholder">bracelets.jpg</div>
+          <div class="card-overlay">
+            <h3>Bracelets</h3>
+            <p>Tennis · Bangles · Cuffs</p>
+            <a href="#" class="card-link">Shop Now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       NEW ARRIVALS
+       ================================================ -->
+  <section class="products" id="new-arrivals">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Just Arrived</p>
+        <h2 class="section-title">New Arrivals</h2>
+        <a href="#" class="section-link">View All →</a>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-image">
+            <div class="product-img" style="background-image:url('assets/products/rings/ring-01.jpg')">
+              <div class="product-placeholder">ring-01.jpg</div>
+            </div>
+            <div class="product-actions">
+              <button class="btn-wishlist">♡</button>
+              <button class="btn-quick-view">Quick View</button>
+            </div>
+            <span class="badge">New</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Rings</p>
+            <h4 class="product-name">Celestial Solitaire Ring</h4>
+            <p class="product-price">$4,850</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <div class="product-img" style="background-image:url('assets/products/necklaces/necklace-01.jpg')">
+              <div class="product-placeholder">necklace-01.jpg</div>
+            </div>
+            <div class="product-actions">
+              <button class="btn-wishlist">♡</button>
+              <button class="btn-quick-view">Quick View</button>
+            </div>
+            <span class="badge">New</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Necklaces</p>
+            <h4 class="product-name">Lumière Sapphire Pendant</h4>
+            <p class="product-price">$3,200</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <div class="product-img" style="background-image:url('assets/products/earrings/earrings-01.jpg')">
+              <div class="product-placeholder">earrings-01.jpg</div>
+            </div>
+            <div class="product-actions">
+              <button class="btn-wishlist">♡</button>
+              <button class="btn-quick-view">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Earrings</p>
+            <h4 class="product-name">Aurora Drop Earrings</h4>
+            <p class="product-price">$2,750</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <div class="product-img" style="background-image:url('assets/products/bracelets/bracelet-01.jpg')">
+              <div class="product-placeholder">bracelet-01.jpg</div>
+            </div>
+            <div class="product-actions">
+              <button class="btn-wishlist">♡</button>
+              <button class="btn-quick-view">Quick View</button>
+            </div>
+            <span class="badge sale">Sale</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Bracelets</p>
+            <h4 class="product-name">Eternal Tennis Bracelet</h4>
+            <p class="product-price"><s>$6,400</s> $5,120</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <div class="product-img" style="background-image:url('assets/products/rings/ring-02.jpg')">
+              <div class="product-placeholder">ring-02.jpg</div>
+            </div>
+            <div class="product-actions">
+              <button class="btn-wishlist">♡</button>
+              <button class="btn-quick-view">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Rings</p>
+            <h4 class="product-name">Midnight Sapphire Ring</h4>
+            <p class="product-price">$7,200</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <div class="product-img" style="background-image:url('assets/products/necklaces/necklace-02.jpg')">
+              <div class="product-placeholder">necklace-02.jpg</div>
+            </div>
+            <div class="product-actions">
+              <button class="btn-wishlist">♡</button>
+              <button class="btn-quick-view">Quick View</button>
+            </div>
+            <span class="badge">New</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Necklaces</p>
+            <h4 class="product-name">Golden Cascade Necklace</h4>
+            <p class="product-price">$5,600</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <div class="product-img" style="background-image:url('assets/products/earrings/earrings-02.jpg')">
+              <div class="product-placeholder">earrings-02.jpg</div>
+            </div>
+            <div class="product-actions">
+              <button class="btn-wishlist">♡</button>
+              <button class="btn-quick-view">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Earrings</p>
+            <h4 class="product-name">Diamond Halo Studs</h4>
+            <p class="product-price">$3,900</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <div class="product-img" style="background-image:url('assets/products/bracelets/bracelet-02.jpg')">
+              <div class="product-placeholder">bracelet-02.jpg</div>
+            </div>
+            <div class="product-actions">
+              <button class="btn-wishlist">♡</button>
+              <button class="btn-quick-view">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Bracelets</p>
+            <h4 class="product-name">Rose Gold Chain Bracelet</h4>
+            <p class="product-price">$2,100</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       BRAND PROMISES
+       ================================================ -->
+  <section class="promises">
+    <div class="container">
+      <div class="promises-grid">
+        <div class="promise-item">
+          <div class="promise-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h4>Certified Diamonds</h4>
+          <p>Every stone is GIA-certified, conflict-free, and ethically sourced from verified suppliers worldwide.</p>
+        </div>
+        <div class="promise-item">
+          <div class="promise-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Lifetime Warranty</h4>
+          <p>Every piece comes with our lifetime warranty. We stand behind our craftsmanship, forever.</p>
+        </div>
+        <div class="promise-item">
+          <div class="promise-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h4>Handcrafted with Love</h4>
+          <p>Each piece is handcrafted by master jewelers with decades of experience and unwavering attention to detail.</p>
+        </div>
+        <div class="promise-item">
+          <div class="promise-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h4>Free Insured Shipping</h4>
+          <p>Complimentary insured shipping on all orders over $500, delivered in our signature luxury gift box.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       ABOUT / BRAND STORY
+       ================================================ -->
+  <section class="about" id="about">
+    <div class="about-grid">
+      <div class="about-image">
+        <!-- Drop atelier/brand photo in assets/about/atelier.jpg -->
+        <div class="about-img" style="background-image:url('assets/about/atelier.jpg')">
+          <div class="about-placeholder">atelier.jpg</div>
+        </div>
+        <div class="about-frame"></div>
+      </div>
+      <div class="about-content">
+        <p class="section-eyebrow">Our Story</p>
+        <h2 class="about-title">Born from a Passion<br><em>for Perfection</em></h2>
+        <p>Founded in 2008, LUMIÈRE was born from a single belief: that fine jewelry should be more than adornment — it should be a testament to the moments that define you.</p>
+        <p>Every piece we create begins with a story. Our master jewelers work with the finest ethically-sourced materials, from conflict-free diamonds to 18-karat gold, transforming raw beauty into wearable art.</p>
+        <p>From our atelier to your hands — each creation carries the weight of generations of craft and the lightness of pure joy.</p>
+        <a href="#" class="btn btn-outline">Discover Our Craft</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       TESTIMONIALS
+       ================================================ -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Client Stories</p>
+        <h2 class="section-title">Words From Our Clients</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">✦ ✦ ✦ ✦ ✦</div>
+          <p>"The engagement ring exceeded every expectation. My fiancée was speechless. The craftsmanship is extraordinary — you can feel the quality the moment you hold it."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"></div>
+            <div>
+              <strong>James R.</strong>
+              <span>New York, USA</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">✦ ✦ ✦ ✦ ✦</div>
+          <p>"I've purchased jewelry from many luxury houses, but LUMIÈRE stands in a category of its own. The attention to detail is unmatched and the service is truly impeccable."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"></div>
+            <div>
+              <strong>Sophie M.</strong>
+              <span>London, UK</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">✦ ✦ ✦ ✦ ✦</div>
+          <p>"The tennis bracelet I ordered was even more stunning in person than online. The diamonds catch light in the most breathtaking way. Absolutely worth every penny."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"></div>
+            <div>
+              <strong>Amara K.</strong>
+              <span>Dubai, UAE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       GALLERY (Instagram Feed)
+       ================================================ -->
+  <section class="gallery">
+    <div class="gallery-header">
+      <p>Follow us @lumiere.jewelry</p>
+    </div>
+    <!-- Drop 6 gallery images in assets/gallery/ -->
+    <div class="gallery-grid">
+      <div class="gallery-item" style="background-image:url('assets/gallery/gallery-01.jpg')"><div class="gallery-placeholder">gallery-01.jpg</div></div>
+      <div class="gallery-item" style="background-image:url('assets/gallery/gallery-02.jpg')"><div class="gallery-placeholder">gallery-02.jpg</div></div>
+      <div class="gallery-item" style="background-image:url('assets/gallery/gallery-03.jpg')"><div class="gallery-placeholder">gallery-03.jpg</div></div>
+      <div class="gallery-item" style="background-image:url('assets/gallery/gallery-04.jpg')"><div class="gallery-placeholder">gallery-04.jpg</div></div>
+      <div class="gallery-item" style="background-image:url('assets/gallery/gallery-05.jpg')"><div class="gallery-placeholder">gallery-05.jpg</div></div>
+      <div class="gallery-item" style="background-image:url('assets/gallery/gallery-06.jpg')"><div class="gallery-placeholder">gallery-06.jpg</div></div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       NEWSLETTER
+       ================================================ -->
+  <section class="newsletter" id="contact">
+    <div class="container">
+      <div class="newsletter-inner">
+        <p class="section-eyebrow">Join the Circle</p>
+        <h2>Be the First to Know</h2>
+        <p>New arrivals, exclusive offers, and stories from our atelier — delivered to your inbox.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <p class="newsletter-note">No spam, ever. Unsubscribe at any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       FOOTER
+       ================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">LUMIÈRE</a>
+          <p>Fine jewelry crafted for those who define their own elegance. Ethically sourced, masterfully crafted.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.236 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.181-.78 1.172-4.97 1.172-4.97s-.299-.598-.299-1.482c0-1.388.806-2.428 1.808-2.428.852 0 1.265.64 1.265 1.408 0 .858-.546 2.14-.828 3.33-.236.995.499 1.806 1.48 1.806 1.773 0 3.141-1.872 3.141-4.573 0-2.39-1.718-4.061-4.169-4.061-2.84 0-4.507 2.131-4.507 4.335 0 .858.33 1.776.742 2.278a.3.3 0 0 1 .069.286c-.076.315-.244.995-.277 1.134-.044.183-.146.222-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.967-.527-2.292-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Collections</h5>
+          <ul>
+            <li><a href="#">Rings</a></li>
+            <li><a href="#">Necklaces</a></li>
+            <li><a href="#">Earrings</a></li>
+            <li><a href="#">Bracelets</a></li>
+            <li><a href="#">New Arrivals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#">Custom Design</a></li>
+            <li><a href="#">Ring Sizing</a></li>
+            <li><a href="#">Jewelry Repair</a></li>
+            <li><a href="#">Gift Wrapping</a></li>
+            <li><a href="#">Engraving</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LUMIÈRE Fine Jewelry. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
